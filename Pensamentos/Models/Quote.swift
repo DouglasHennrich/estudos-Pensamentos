@@ -1,0 +1,23 @@
+//
+//  Quote.swift
+//  Pensamentos
+//
+//  Created by Douglas Hennrich on 03/07/20.
+//  Copyright © 2020 Douglas Hennrich. All rights reserved.
+//
+
+import Foundation
+
+struct Quote: Codable {
+    let quote: String
+    let author: String
+    let image: String
+    
+    var quoteFormatted: String {
+        return "〝\(quote)〞"
+    }
+    
+    var authorFormatted: String {
+        return "- \(author) -"
+    }
+}
